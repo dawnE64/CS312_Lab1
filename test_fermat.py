@@ -42,6 +42,7 @@ class TestFermatAccuracy(TestCase):
         for i in range(20):
             self.assertNotEqual('prime', fermat(561, 10))
 
+
 # Pre-calculated probabilities compared to the function's computed output
 class TestFermatProbability(TestCase):
 
@@ -61,7 +62,7 @@ class TestFermatProbability(TestCase):
         print(f'expected vs got\n{0.999999998137:.10f}\n{fprobability(k):.10f}\n')
 
 
-# Do auto answers match my by-hand ones?
+# Do auto answer match my by-hand ones?
 class TestModularExponentiation(TestCase):
 
     def test_mod_exp_1(self):
@@ -98,4 +99,3 @@ class TestMillerRabinProbability(TestCase):
 
     def test_mprobability(self):
         self.fail()
-
