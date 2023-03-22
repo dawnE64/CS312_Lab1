@@ -32,7 +32,6 @@ class TestFermatAccuracy(TestCase):
 
     # This test shows that the function is insufficient because it can't pick out a Carmichael number
     # In this test, k = 2
-    # TODO ASK: How do Carmichael numbers actually work? Should this ALWAYS pass?
     def test_fermat_first_carmichael_1(self):
         for i in range(20):
             self.assertNotEqual('prime', fermat(561, 2))
